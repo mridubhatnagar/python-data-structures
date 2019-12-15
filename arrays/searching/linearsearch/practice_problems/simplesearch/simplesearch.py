@@ -12,7 +12,7 @@ print('Hi, %s.' % name)         # Writing output to STDOUT
 '''
 
 # Write your code here
-L=[]
+
 total_integers=int(input())
 numbers=input()
 L = numbers.split()
