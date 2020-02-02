@@ -1,7 +1,7 @@
 def search_element(arr, k):
-	for index, value in enumerate(arr):
-		if value==k:
-			print(index)
+    for index, value in enumerate(arr):
+        if value==k:
+            print(index)
 
 
 
