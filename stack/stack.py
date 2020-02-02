@@ -13,49 +13,49 @@ Stack:
 
 class Stack:
 
-	def __init__(self):
-		self.list = []
+    def __init__(self):
+        self.list = []
 
 
-	def push(self, item):
-		"""
-		Inserts an item in stack.
-		"""
-		self.list.append(item)
+    def push(self, item):
+        """
+        Inserts an item in stack.
+        """
+        self.list.append(item)
 
-	def pop(self):
-		"""
-		Removes an item from the stack.
-		"""
-		return self.list.pop()
+    def pop(self):
+        """
+        Removes an item from the stack.
+        """
+        return self.list.pop()
 
-	def peek(self):
-		"""
-		Only shows the top element. Does not
-		remove element from list.
-		"""
-		return self.list[len(self.list) - 1]
+    def peek(self):
+        """
+        Only shows the top element. Does not
+        remove element from list.
+        """
+        return self.list[len(self.list) - 1]
 
-	def isempty(self):
-		"""
-		Checks if list is empty or not.
-		"""
-		if len(self.list)==0:
-			return True
-		else:
-			return False
+    def isempty(self):
+        """
+        Checks if list is empty or not.
+        """
+        if len(self.list)==0:
+            return True
+        else:
+            return False
 
-	def size(self):
-		"""
-		Checks the size of list.
-		"""
-		return len(self.list)
+    def size(self):
+        """
+        Checks the size of list.
+        """
+        return len(self.list)
 
-	def showcontent(self):
-		"""
-		Show stack.
-		"""
-		return self.list
+    def showcontent(self):
+        """
+        Show stack.
+        """
+        return self.list
 
 
 """
