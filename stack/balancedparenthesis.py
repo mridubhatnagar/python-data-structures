@@ -4,6 +4,8 @@ Balanced Parenthesis uses the concept of stack.
 Balanced parentheses means that each opening symbol 
 has a corresponding closing symbol and the pairs of parentheses are properly nested.
 
+In the below solution only round brackets are considered in the given string.
+
 """
 from stack import Stack
 
