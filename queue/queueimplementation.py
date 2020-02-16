@@ -8,7 +8,7 @@ class Queue:
 		"""
 		Inserts an element in a queue.
 		"""
-		return self.list.append(item)
+		self.list.append(item)
 
 	
 	def dequeue(self):
