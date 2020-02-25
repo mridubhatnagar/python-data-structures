@@ -14,6 +14,9 @@ print('Hi, %s.' % name)         # Writing output to STDOUT
 # Warning: Printing unwanted or ill-formatted data to output will cause the test cases to fail
 '''
 
+############################################
+
+Solution approach 1
 def min_max(total_integers, integer_values):
     L=[]
     for i in range(0, total_integers):
@@ -34,3 +37,26 @@ integer_values=input().split()
 
 minimum_num, maximum_num = min_max(total_integers, integer_values)
 print(minimum_num, maximum_num)
+
+############################################
+
+Solution approach 2
+
+def min_max(total_integers, integer_values):
+    L=[]
+    for i in range(0, total_integers):
+        total=0
+        total = sum(integer_values[:i] + integer_values[i+1:])
+        L.append(total)
+    minimum=min(L)
+    maximum=max(L)
+    return minimum, maximum
+
+# Write your code here
+total_integers=int(input())
+integer_values=list(map(int, input().split()))
+
+minimum_num, maximum_num = min_max(total_integers, integer_values)
+print(minimum_num, maximum_num)
+
+#############################################
