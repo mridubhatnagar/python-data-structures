@@ -43,11 +43,7 @@ print(minimum_num, maximum_num)
 Solution approach 2
 
 def min_max(total_integers, integer_values):
-    L=[]
-    for i in range(0, total_integers):
-        total=0
-        total = sum(integer_values[:i] + integer_values[i+1:])
-        L.append(total)
+    L = [sum(integer_values[:i] + integer_values[i+1:]) for i in range(0, total_integers)]
     minimum=min(L)
     maximum=max(L)
     return minimum, maximum
