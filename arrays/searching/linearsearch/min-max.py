@@ -56,3 +56,23 @@ minimum_num, maximum_num = min_max(total_integers, integer_values)
 print(minimum_num, maximum_num)
 
 #############################################
+
+Solution approach 3 
+# Optimized Solution from O(N^2) to O(N)
+
+def min_max(total_integers, integer_values):
+    L=[]
+    total=sum(integer_values)
+    for i in range(0, total_integers):
+        result = total - integer_values[i]
+        L.append(result)
+    minimum=min(L)
+    maximum=max(L)
+    return minimum, maximum
+
+# Write your code here
+total_integers=int(input())
+integer_values=list(map(int, input().split()))
+
+minimum_num, maximum_num = min_max(total_integers, integer_values)
+print(minimum_num, maximum_num)
